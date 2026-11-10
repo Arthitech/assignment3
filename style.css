@@ -1,0 +1,483 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.overall-container{
+    height: 100vh;
+    /* border: 2px solid red; */
+    background-image: url("https://demo2.wpopal.com/smartic/wp-content/uploads/revslider/slide-headfone.jpg");
+    background-repeat: no-repeat;
+    
+    
+    
+
+}
+
+.nav{
+   /* border: 2px solid blanchedalmond; */
+   display: flex;
+  
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+   
+}
+.navbar-container{
+    display: flex;
+    /* border: 2px solid red; */
+    width: 100%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+   justify-content: space-between;
+   height: 100px;
+   
+    
+}
+.navbar-container img{
+    width: 150px;
+    height: 60px;
+    margin-left: 160px;
+}
+.nav-list a{
+     text-decoration: none;
+     color: white;
+     font-family: Poopins,sans-serif;
+     font-weight: bold;
+     cursor: pointer;
+    
+}
+.nav-list a:hover{
+    color: red;
+}
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 70px;
+    gap: 30px;
+}
+.nav-icon{
+    
+    display: flex;
+    gap: 20px;
+    margin-right: 40px;
+}
+.cart-val{
+    border: 2px solid gray;
+    height: 15px;
+     width: 15px;
+     border-radius: 50%;
+     color: white;
+     background-color: red;
+     text-align: center;
+     position: relative;
+     right:70px;
+    font-size: 14px;
+    bottom:15px;
+    
+}
+.nav-icon .fa-solid fa-bars-staggered{
+    position: absolute;
+}
+.header-container{
+    /* border: 2px solid blue; */
+     
+    height: 70%;
+    width: 100%;
+    display: flex;
+   flex-direction: column;
+    justify-content: center;
+    
+    
+}
+.header-content{
+    /* border: 2px solid red; */
+    width: 32%;
+   height: 250px;
+   margin-left: 150px;
+   
+}
+.header-content span{
+    color: red;
+    text-transform: uppercase;
+    font-family: Anton;
+    line-height: 2;
+    font-weight: 400;
+    font-size:50px;
+    
+}
+.header-content p{
+    font-family: sans-serif;
+  color: gray;
+  font-size: 16px;
+ line-height: 1.5;
+
+}
+.header-button{
+    /* background-color: red; */
+    width: 120px;
+    background-color: red;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+     padding: 20px; 
+     cursor: pointer;
+    
+}
+.header-button p{
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+   
+}
+.infomation-container{
+    
+   background-color: white;
+   display: flex;
+   justify-content: space-around;
+   margin-top: 25px;
+   height:100vh;
+   margin-top: 30px;
+   opacity: 0;
+   transform: translateY(50px);
+   transition: all 1s ease-in-out;
+   
+}
+.infomation-container.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.info-image1{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    margin-top: 80px;
+    /* opacity: 0;
+    translateY:50px ; */
+}
+.info-image1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.cards {
+    /* border: 2px solid beige; */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.val{
+   
+    /* border: 2px solid palevioletred; */
+    height: 350px;
+    width: 650px;
+    position: relative;
+     margin-top: -40px;
+    
+}
+
+.infomation-paragraph{
+    /* border: 2px solid black; */
+    height: 300px;
+    width: 650px;
+    
+   
+    
+}
+.infomation-paragraph h4{
+    font-family: sans-serif;
+    color: gray;
+    font-size: 15px;
+
+}
+.infomation-paragraph h2{
+    text-transform: uppercase;
+    font-family: Anton;
+    line-height: 2;
+    font-weight: 400;
+    font-size:40px;
+    margin-bottom: 20px;
+}
+.infomation-paragraph p{
+    color: gray;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+.features{
+    border:2px solid red;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+     padding: 15px;
+     width: 120px; 
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+.features p{
+    color: black;
+     font-family: sans-serif;
+     font-weight: bold;
+      font-size: 15px;
+}
+.features p:hover{
+    color: red;
+}
+.banner-info{
+    width: 100%;
+    margin-top: 30px;
+    /* border: 2px solid black; */
+    height: 500px;
+    position: relative;
+   
+    
+}
+.banner-info img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+.info-text{
+    position: absolute;
+     top: 30%;
+    right: 60%;
+    
+}
+.info-text p{
+color: gray;
+font-family: sans-serif;
+font-size: 17px;
+text-transform: uppercase;
+line-height: 2;
+font-weight: 500;
+}
+.info-text span{
+    color: white;
+    text-transform: uppercase;
+    font-family: Anton;
+    line-height: 1;
+    font-weight: 400;
+    font-size:40px;
+}
+.slide{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  
+    
+}
+.sliding-heading{
+    /* border: 2px solid blueviolet; */
+    width:40%;
+    text-align: center;
+   margin-top: 50px;
+   
+}
+.sliding-heading h1{
+     text-transform: uppercase;
+    font-family: Anton;
+    font-weight: 400;
+    font-size:40px;
+}
+.sliding-heading p{
+    color: gray;
+font-family: sans-serif;
+font-size: 17px;
+text-transform: uppercase;
+line-height: 2;
+font-weight: 500;
+}
+.sliding-container{
+    /* border: 2px solid green; */
+    margin-top: 50px;
+    display: flex;
+    
+justify-content: space-around;
+
+   
+    padding: 40px;
+}
+.sliders{
+    display: flex;
+    /* border: 2px solid black; */
+    width: 400px;
+    row-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    margin-bottom: 100px;
+    }
+ .profile{
+    border: 2px solid gray;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: relative;
+}
+.profile img{
+    position:  absolute;
+     width: 70px;
+    height: 70px;
+     border-radius: 50%;
+}
+.star{
+    color: orangered;
+}
+.quotes{
+    font-size: 50px;
+    color: gray;
+}
+.sliders span{
+    color: gray;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+}
+.product-cart{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  
+    
+}
+.cart-heading{
+    /* border: 2px solid blueviolet; */
+    width:40%;
+    text-align: center;
+   margin-top: 50px;
+   
+}
+.cart-heading h1{
+     text-transform: uppercase;
+    font-family: Anton;
+    font-weight: 400;
+    font-size:40px;
+}
+.cart-heading p{
+    color: gray;
+font-family: sans-serif;
+font-size: 17px;
+text-transform: uppercase;
+line-height: 2;
+font-weight: 500;
+}
+.cart-container{
+    /* border: 2px solid green; */
+    margin-top: 50px;
+    display: flex;
+    
+justify-content: space-around;
+
+   
+    /* padding: 40px; */
+}
+.cart{
+    display: flex;
+    /* border: 2px solid rgb(220, 20, 20); */
+    width: 400px;
+    row-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    margin-bottom: 100px;
+    }
+.product-image{
+    /* border: 2px solid black; */
+    height: 400px;
+}
+.product-image img{
+    width: 400px;
+    height: 400px;
+}
+.cart p{
+    color: gray;
+    font-size: 16px;
+}
+.cart h2{
+    color: red;
+    font-weight: 20px;
+}
+.add-cart{
+    background-color: red;
+   
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    
+   
+}
+.add-cart p{
+       color: white;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-family: sans-serif;
+       font-size: 15px;
+       font-weight: bold;
+        padding: 10px;
+}
+
+.footer-image img{
+    width: 100%;
+    position: absolute;
+    
+}
+.fotter-text{
+position: relative;
+text-align: center;
+top:40px;
+line-height: 1.5;
+}
+.fotter-text p{
+  color: gray;
+  font-weight: 20px;
+  font-family: sans-serif;
+  letter-spacing: 1; 
+}
+.fotter-text h2{
+   text-transform: uppercase;
+    font-family: Anton;
+    font-weight: 400;
+    font-size:40px;
+    color: white;
+}
+.fotter-text span{
+    color: gray;
+     font-family: sans-serif;
+}
+.user-input input{
+    margin-top: 50px;
+    width: 500px;
+    height: 50px;
+    padding: 10px;
+    margin-left: 80px;
+
+}
+.user-input button{
+    background-color: red;
+    color: white;
+     width: 100px;
+    height: 50px;
+    border: none;
+    font-size: 16px;
+    font-family: sans-serif;
+    position: relative;
+    right: 120px;
+    cursor: pointer;
+
+}
